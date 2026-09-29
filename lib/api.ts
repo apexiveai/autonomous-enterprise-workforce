@@ -25,7 +25,7 @@ export async function getExecution(
 }
 
 export async function getExecutions(): Promise<Execution[]> {
-  return request<Execution[]>("/executions");
+  return apiRequest<Execution[]>("/executions");
 }
 
 export async function getApprovals(
